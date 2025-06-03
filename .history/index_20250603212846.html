@@ -754,7 +754,7 @@
                 <i class="ri-linkedin-fill"></i>
               </a>
               <a
-                href="#"
+                href=""
                 target="_blank"
                 class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors"
               >
@@ -1825,7 +1825,19 @@
     </footer>
 
     <script src="script.js"></script>
-    <!-- No custom JS for download, let the anchor handle it -->
+    <script>
+      // Initiate download on button click via JavaScript
+      document.getElementById('download-resume-btn')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        const fileUrl = "Knowledge-Udoh's-Resume.pdf";
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = "Knowledge-Udoh's-Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+    </script>
   </body>
 </html>
 

@@ -17,7 +17,7 @@ function showToast(message, type = "success") {
             <span style="font-weight: 500;">${message}</span>
         </div>
     `;
-    // Glassmorphism + primary color, more transparent
+    // Glassmorphism + primary color
     toast.style.cssText = `
         position: fixed;
         top: 2rem;
@@ -27,11 +27,11 @@ function showToast(message, type = "success") {
         max-width: 90vw;
         padding: 1rem 1.5rem;
         border-radius: 16px;
-        background: rgba(26, 128, 224, 0.18); /* more transparent */
+        background: rgba(26, 128, 224, 0.35);
         color: #fff;
-        backdrop-filter: blur(16px) saturate(180%);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
-        border: 1px solid rgba(26, 128, 224, 0.18);
+        backdrop-filter: blur(12px) saturate(180%);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        border: 1px solid rgba(26, 128, 224, 0.25);
         font-family: 'Inter', 'Poppins', sans-serif;
         font-size: 1rem;
         transition: opacity 0.3s;

@@ -24,16 +24,6 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init({
-            publicKey: "d_gq6y2SyyMMhYLKN",
-          });
-       })();
-    </script>
     
 
     <script>
@@ -1724,6 +1714,7 @@
               <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
               <form
                 class="space-y-6"
+                
               >
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div class="relative">
@@ -1799,7 +1790,7 @@
                 </div>
                 <button
                   type="submit"
-                  class="w-full px-6 py-3 bg-primary text-white font-medium !rounded-button hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20 whitespace-nowrap" onclick="sendMail()"
+                  class="w-full px-6 py-3 bg-primary text-white font-medium !rounded-button hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20 whitespace-nowrap"
                 >
                   Send Message
                 </button>
@@ -1838,7 +1829,6 @@
 
     <script src="script.js"></script>
     <!-- No custom JS for download, let the anchor handle it -->
-     <script src="email.js"></script>
   </body>
 </html>
 

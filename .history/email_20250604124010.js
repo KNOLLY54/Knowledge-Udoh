@@ -1,7 +1,3 @@
-// Make sure EmailJS is loaded in your HTML before this script:
-// <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-// <script>emailjs.init("YOUR_USER_ID");</script>
-
 function showToast(message, type = "success") {
     // Remove any existing toast
     document.querySelectorAll('.custom-toast').forEach(t => t.remove());
